@@ -6,6 +6,7 @@ while True:
 
     validPlays = ["Rock", "Paper", "Scissors"]
     opt = input("Press (R) for Rock, (P) for Paper, (S) to Scissors, (1) to see your Score or (0) to Exit the program: ")
+    oponent = random.choice(validPlays)
 
     if(opt == '0'):
         print("Exiting...")
@@ -13,7 +14,6 @@ while True:
 
     elif opt in ("r", "R"):
         print("You chose Rock.")
-        opponent = random.choice(validPlays)
         print("Your Opponent rolled " + opponent + ".")
         if(opponent == "Rock"):
             print("It's a Tie!")
@@ -28,7 +28,6 @@ while True:
         
     elif opt in ("p", "P"):
         print("You chose Paper.")
-        oponentPlay = random.choice(validPlays)
         print("Your Opponent rolled " + opponent + ".")
         if(opponent == "Paper"):
             print("It's a Tie!")
@@ -43,7 +42,6 @@ while True:
 
     elif opt in ("s", "S"):
         print("You chose Scissors.")
-        oponentPlay = random.choice(validPlays)
         print("Your Opponent rolled " + opponent + ".")
         if(opponent == "Scissors"):
             print("It's a Tie!")
